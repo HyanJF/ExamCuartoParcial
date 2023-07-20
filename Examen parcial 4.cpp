@@ -57,7 +57,7 @@ void Critter::Talk()
     if (m_Hunger > 150)
     {
         cout << "Tu mascota a muerto de Hambre" << endl;
-        void Exit();
+        exit(0);
     }
     if (m_Boredom > 50 && m_Boredom < 100)
     {
@@ -70,7 +70,7 @@ void Critter::Talk()
     if (m_Boredom > 150)
     {
         cout << "Tu mascota a muerto de aburrimiento" << endl;
-        void Exit();
+        exit(0);
     }
     if (m_Tired > 35 && m_Tired < 75)
     {
@@ -83,7 +83,7 @@ void Critter::Talk()
     if (m_Tired > 150)
     {
         cout << "Tu mascota a muerto de Sueño" << endl;
-        void Exit();
+        exit(0);
     }
     if (m_Hunger < 25 && m_Boredom < 50 && m_Tired < 35)
     {
@@ -219,7 +219,7 @@ void Punteros()
 
 }
 
-int CalculatePos(const vector<int>* plistNumber)
+int CalculatePos(const vector<int>* const plistNumber)
 {
     int pos;
 
