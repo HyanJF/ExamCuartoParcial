@@ -7,7 +7,6 @@ void Objetos();
 void Punteros();
 
 //Punteros
-int CalculatePos(vector<int>* listNumber);
 
 //Objetos
 class Critter
@@ -57,7 +56,7 @@ void Critter::Talk()
     if (m_Hunger > 150)
     {
         cout << "Tu mascota a muerto de Hambre" << endl;
-        exit(0);
+        void Exit();
     }
     if (m_Boredom > 50 && m_Boredom < 100)
     {
@@ -70,7 +69,7 @@ void Critter::Talk()
     if (m_Boredom > 150)
     {
         cout << "Tu mascota a muerto de aburrimiento" << endl;
-        exit(0);
+        void Exit();
     }
     if (m_Tired > 35 && m_Tired < 75)
     {
@@ -83,7 +82,7 @@ void Critter::Talk()
     if (m_Tired > 150)
     {
         cout << "Tu mascota a muerto de Sueño" << endl;
-        exit(0);
+        void Exit();
     }
     if (m_Hunger < 25 && m_Boredom < 50 && m_Tired < 35)
     {
@@ -215,15 +214,5 @@ void Punteros()
     {
         cout << Numeros[i] << endl;
     }
-    int Number = CalculatePos(&Numeros);
-
-}
-
-int CalculatePos(const vector<int>* const plistNumber)
-{
-    int pos;
-
-
-
-    return pos;
+    
 }
